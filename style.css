@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #c31432, #240b36);
+}
+
+.calculator {
+  background: white;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px -5px #0f2027;
+  box-shadow: -1px 0px 4px 1px rgb(0 0 0 / 69%) inset;
+}
+
+.display-calc {
+  background: black;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.display-calc h1 {
+  margin: 0;
+  padding: 25px;
+  font-size: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.eqlSign {
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  color: white;
+}
+#eql {
+  background-color: #459bd7;
+}
+
+.operator {
+  background-color: grey;
+  color: white;
+}
+
+.clearBtn {
+  background-color: #c31432;
+  color: white;
+}
+
+button {
+  border: 0px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px;
+  transition: 200ms;
+  filter: drop-shadow(1px 1px 1px black);
+  box-shadow: -1px 0px 4px 1px rgb(0 0 0 / 69%) inset;
+}
+
+button:active {
+  filter: drop-shadow(0px 0px 0px black);
+}
